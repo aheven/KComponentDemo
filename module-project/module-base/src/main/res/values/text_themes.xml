@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="TextView" parent="android:style/Widget.TextView" />
+
+    <style name="TextView.Regular" parent="TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+    <style name="TextView.Italic" parent="TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TextView.Bold" parent="TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Bold.Italic" parent="TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="TextView.Light" parent="TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextView.Light.Italic" parent="TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TextView.Thin" parent="TextView">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextView.Thin.Italic" parent="TextView">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TextView.Condensed" parent="TextView">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextView.Condensed.Italic" parent="TextView">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TextView.Condensed.Bold" parent="TextView">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Condensed.Bold.Italic" parent="TextView">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="TextView.Medium" parent="TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextView.Medium.Italic" parent="TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TextView.Black" parent="TextView">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextView.Black.Italic" parent="TextView">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+</resources>

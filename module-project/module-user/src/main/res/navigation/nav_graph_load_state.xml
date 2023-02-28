@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_load_state.xml"
+    app:startDestination="@id/loadStateViewHomeFragment">
+
+    <fragment
+        android:id="@+id/loadStateViewHomeFragment"
+        android:name="heven.holt.kcomponent.user.ui.loadstate.LoadStateViewHomeFragment"
+        android:label="LoadStateViewHomeFragment"
+        tools:layout="@layout/fragment_load_state_home">
+        <action
+            android:id="@+id/action_loadStateViewHomeFragment_to_loadStateErrorActActivity"
+            app:destination="@id/loadStateErrorActActivity" />
+        <action
+            android:id="@+id/action_loadStateViewHomeFragment_to_loadStateEmptyFragment"
+            app:destination="@id/loadStateEmptyFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loadStateViewHomeFragment_to_loadStatePlaceholderFragment"
+            app:destination="@id/loadStatePlaceholderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loadStateViewHomeFragment_to_loadStateViewPagerFragment"
+            app:destination="@id/loadStateViewPagerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <activity
+        android:id="@+id/loadStateErrorActActivity"
+        android:name="heven.holt.kcomponent.user.ui.loadstate.LoadStateErrorActActivity"
+        android:label="LoadStateErrorActActivity"
+        tools:layout="@layout/load_state_layout_content" />
+
+    <fragment
+        android:id="@+id/loadStateEmptyFragment"
+        android:name="heven.holt.kcomponent.user.ui.loadstate.LoadStateEmptyFragment"
+        android:label="LoadStateEmptyFragment"
+        tools:layout="@layout/load_state_layout_content" />
+
+    <fragment
+        android:id="@+id/loadStatePlaceholderFragment"
+        android:name="heven.holt.kcomponent.user.ui.loadstate.LoadStatePlaceholderFragment"
+        android:label="LoadStatePlaceholderFragment"
+        tools:layout="@layout/view_load_state" />
+    <fragment
+        android:id="@+id/loadStateViewPagerFragment"
+        android:name="heven.holt.kcomponent.user.ui.loadstate.LoadStateViewPagerFragment"
+        android:label="LoadStateViewPagerFragment"
+        tools:layout="@layout/load_state_view_pager" />
+</navigation>

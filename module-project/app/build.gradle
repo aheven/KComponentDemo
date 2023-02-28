@@ -1,0 +1,21 @@
+plugins {
+    id 'com.android.application'
+    id 'com.xiaojinzi.kcomponent.plugin'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.devtools.ksp'
+}
+
+android {
+    namespace 'heven.holt.kcomponent.demo'
+}
+
+apply from: "../module_project.gradle"
+
+ksp {
+    arg("ModuleName", "app")
+}
+
+dependencies {
+    api project(':module-project:module-base')
+    api project(':module-project:module-user')
+}

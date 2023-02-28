@@ -1,0 +1,30 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'com.google.devtools.ksp'
+}
+
+apply from: project.getRootProjectPath() + "/common_android.gradle"
+apply from: project.getRootProjectPath() + "/common_ksp_for_component.gradle"
+
+android {
+    namespace 'heven.holt.kcomponent.base'
+}
+
+apply from: project.getRootProjectPath() + "/common_android.gradle"
+apply from: project.getRootProjectPath() + "/common_ksp_for_component.gradle"
+
+ksp {
+    arg("ModuleName", "base")
+}
+
+dependencies {
+    api "com.github.xiaojinzi123.KComponent:kcomponent-rx:${versions.component_version}"
+    ksp "com.github.xiaojinzi123.KComponent:kcomponent-compiler:${versions.component_version}"
+
+    api project(':lib-resource')
+
+    api libs.appcompat
+    api libs.core_ktx
+    api libs.material
+}

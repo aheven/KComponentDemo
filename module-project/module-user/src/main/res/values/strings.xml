@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_load_state_view">LoadStateView使用示例</string>
+
+    <string name="load_state_introduce">A highly expandable Android library for showing loading status view with the low-coupling way.</string>
+</resources>

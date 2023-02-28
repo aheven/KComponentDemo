@@ -1,0 +1,25 @@
+ext.versions = [
+        // 系统级别的版本号
+        android_compile_sdk            : 32,
+        android_min_sdk                : 21,
+        android_target_sdk             : 32,
+        version_code                   : 1000,
+        version_name                   : "1.0",
+
+        component_version              : "v1.0.0-rc4",
+        component_plugin_upload_version: "v1.0.0-rc4",
+        nav_version                    : "2.5.3"
+]
+
+ext.libs = [
+        // Google 提供的
+        appcompat          : 'androidx.appcompat:appcompat:1.5.1',
+        core_ktx           : 'androidx.core:core-ktx:1.8.0',
+        material           : 'com.google.android.material:material:1.7.0',
+        constraintlayout   : 'androidx.constraintlayout:constraintlayout:2.1.4',
+        navigation_fragment: "androidx.navigation:navigation-fragment-ktx:$versions.nav_version",
+        navigation_ui      : "androidx.navigation:navigation-ui-ktx:$versions.nav_version",
+
+        loadingstateview   : 'com.github.DylanCaiCoding.LoadingStateView:loadingstateview-ktx:4.0.2',
+        title_bar          : 'com.github.getActivity:TitleBar:10.0'
+]

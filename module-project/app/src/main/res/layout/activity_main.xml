@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickButton"
+        android:text="LoadStateView" />
+
+    <TextView
+        style="@style/TextView.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文字测试(Regular)" />
+
+    <TextView
+        style="@style/TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文字测试(Medium)" />
+
+    <TextView
+        style="@style/TextView.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文字测试(Bold)" />
+
+    <TextView
+        style="@style/TextView.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文字测试(Light)" />
+
+    <TextView
+        style="@style/TextView.Thin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文字测试(Thin)" />
+
+    <TextView
+        style="@style/TextView.Condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文字测试(Condensed)" />
+
+
+
+    <TextView
+        style="@style/TextView.Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文字测试(Black)" />
+
+</LinearLayout>
