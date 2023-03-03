@@ -34,6 +34,41 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loadStateViewHomeFragment_to_loadStateRecyclerViewFragment"
+            app:destination="@id/loadStateRecyclerViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loadStateViewHomeFragment_to_loadStateCustomHeaderFragment"
+            app:destination="@id/loadStateCustomHeaderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loadStateViewHomeFragment_to_loadStateMultipleHeaderFragment"
+            app:destination="@id/loadStateMultipleHeaderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loadStateViewHomeFragment_to_loadStateScrollingToolbarFragment"
+            app:destination="@id/loadStateScrollingToolbarFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loadStateViewHomeFragment_to_loadStateBottomEditorFragment"
+            app:destination="@id/loadStateBottomEditorFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <activity
@@ -58,4 +93,29 @@
         android:name="heven.holt.kcomponent.user.ui.loadstate.LoadStateViewPagerFragment"
         android:label="LoadStateViewPagerFragment"
         tools:layout="@layout/load_state_view_pager" />
+    <fragment
+        android:id="@+id/loadStateRecyclerViewFragment"
+        android:name="heven.holt.kcomponent.user.ui.loadstate.LoadStateRecyclerViewFragment"
+        android:label="LoadStateRecyclerViewFragment"
+        tools:layout="@layout/fragment_load_state_recycler_view" />
+    <fragment
+        android:id="@+id/loadStateCustomHeaderFragment"
+        android:name="heven.holt.kcomponent.user.ui.loadstate.LoadStateCustomHeaderFragment"
+        android:label="LoadStateCustomHeaderFragment"
+        tools:layout="@layout/load_state_view_pager_single" />
+    <fragment
+        android:id="@+id/loadStateMultipleHeaderFragment"
+        android:name="heven.holt.kcomponent.user.ui.loadstate.LoadStateMultipleHeaderFragment"
+        android:label="LoadStateMultipleHeaderFragment"
+        tools:layout="@layout/load_state_layout_content" />
+    <fragment
+        android:id="@+id/loadStateScrollingToolbarFragment"
+        android:name="heven.holt.kcomponent.user.ui.loadstate.LoadStateScrollingToolbarFragment"
+        android:label="LoadStateScrollingToolbarFragment"
+        tools:layout="@layout/load_state_scrolling" />
+    <fragment
+        android:id="@+id/loadStateBottomEditorFragment"
+        android:name="heven.holt.kcomponent.user.ui.loadstate.LoadStateBottomEditorFragment"
+        android:label="LoadStateBottomEditorFragment"
+        tools:layout="@layout/load_state_layout_content" />
 </navigation>

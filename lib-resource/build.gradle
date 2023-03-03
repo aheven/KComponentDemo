@@ -12,6 +12,11 @@ apply from: project.getRootProjectPath() + "/common_android_lib.gradle"
 
 dependencies {
 //    api libs.loadingstateview
+    api libs.appcompat
+    api libs.core_ktx
+    api libs.material
     api libs.constraintlayout
+
+    api libs.coil
     api libs.title_bar
 }

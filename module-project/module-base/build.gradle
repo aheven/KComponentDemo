@@ -23,8 +23,4 @@ dependencies {
     ksp "com.github.xiaojinzi123.KComponent:kcomponent-compiler:${versions.component_version}"
 
     api project(':lib-resource')
-
-    api libs.appcompat
-    api libs.core_ktx
-    api libs.material
 }

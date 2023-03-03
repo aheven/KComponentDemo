@@ -20,6 +20,7 @@ ext.libs = [
         navigation_fragment: "androidx.navigation:navigation-fragment-ktx:$versions.nav_version",
         navigation_ui      : "androidx.navigation:navigation-ui-ktx:$versions.nav_version",
 
+        coil               : 'io.coil-kt:coil:2.2.2',
         loadingstateview   : 'com.github.DylanCaiCoding.LoadingStateView:loadingstateview-ktx:4.0.2',
         title_bar          : 'com.github.getActivity:TitleBar:10.0'
 ]

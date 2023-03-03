@@ -7,4 +7,5 @@ object RouterConfig {
     const val HOME_MAIN = "home/main"
 
     const val USER_LOAD_STATE_VIEW = "user/loadStateView"
+    const val USER_COIL = "user/coil"
 }

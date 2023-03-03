@@ -3,6 +3,7 @@ package heven.holt.kcomponent.lib.view.loading.state.ktx
 import android.app.Activity
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import heven.holt.kcomponent.lib.view.loading.state.LoadingStateView
 import heven.holt.kcomponent.lib.view.loading.state.OnReloadListener
 import heven.holt.kcomponent.lib.view.loading.state.ViewType
@@ -48,8 +49,36 @@ class LoadingStateDelegate : LoadingState {
         loadingStateView?.setHeaders(ToolbarViewDelegate(title, navBtnType, block))
     }
 
+    override fun Fragment.setToolbar(
+        titleId: Int,
+        navBtnType: NavBtnType,
+        block: (ToolbarConfig.() -> Unit)?
+    ) {
+        setToolbar(getString(titleId), navBtnType, block)
+    }
+
+    override fun Fragment.setToolbar(
+        title: String?,
+        navBtnType: NavBtnType,
+        block: (ToolbarConfig.() -> Unit)?
+    ) {
+        loadingStateView?.addChildHeaders(ToolbarViewDelegate(title, navBtnType, block))
+    }
+
     override fun Activity.setHeaders(vararg delegates: LoadingStateView.ViewDelegate) {
         loadingStateView?.setHeaders(*delegates)
+    }
+
+    override fun Fragment.setHeaders(vararg delegates: LoadingStateView.ViewDelegate) {
+        loadingStateView?.addChildHeaders(*delegates)
+    }
+
+    override fun Activity.setDecorView(delegate: LoadingStateView.DecorViewDelegate) {
+        loadingStateView?.setDecorView(delegate)
+    }
+
+    override fun Fragment.setDecorView(delegate: LoadingStateView.DecorViewDelegate) {
+        loadingStateView?.addChildDecorView(delegate)
     }
 
     override fun showLoadingView(animation: LoadingStateView.Animation?) {

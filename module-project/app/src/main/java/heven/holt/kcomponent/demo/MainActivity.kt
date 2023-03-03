@@ -19,7 +19,11 @@ class MainActivity : BaseActivity(R.layout.activity_main) {
         setToolbar("主页", NavBtnType.NONE)
     }
 
-    fun clickButton(view: View) {
+    fun pageToLoadStateView(view: View) {
         RouterApi::class.routeApi().pageToLoadStateView(view.context)
+    }
+
+    fun pageToCoil(view: View) {
+        RouterApi::class.routeApi().pageToCoil(view.context)
     }
 }

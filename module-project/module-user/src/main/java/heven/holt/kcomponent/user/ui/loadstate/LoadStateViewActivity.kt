@@ -2,6 +2,7 @@ package heven.holt.kcomponent.user.ui.loadstate
 
 import android.os.Bundle
 import android.view.View
+import androidx.navigation.NavDirections
 import androidx.navigation.findNavController
 import com.xiaojinzi.component.anno.RouterAnno
 import heven.holt.kcomponent.base.RouterConfig
@@ -20,28 +21,38 @@ class LoadStateViewActivity : BaseActivity(R.layout.activity_load_state_view) {
     }
 
     fun onViewClicked(view: View) {
-        when (view.id) {
-            R.id.load_state_activity_error -> {
-                val action =
+        val action: NavDirections? =
+            when (view.id) {
+                R.id.load_state_activity_error -> {
                     LoadStateViewHomeFragmentDirections.actionLoadStateViewHomeFragmentToLoadStateErrorActActivity()
-                view.findNavController().navigate(action)
-            }
-            R.id.load_state_fragment_empty -> {
-                val action =
+                }
+                R.id.load_state_fragment_empty -> {
                     LoadStateViewHomeFragmentDirections.actionLoadStateViewHomeFragmentToLoadStateEmptyFragment()
-                view.findNavController().navigate(action)
-            }
-            R.id.load_state_view_placeholder -> {
-                val action =
+                }
+                R.id.load_state_view_placeholder -> {
                     LoadStateViewHomeFragmentDirections.actionLoadStateViewHomeFragmentToLoadStatePlaceholderFragment()
-                view.findNavController().navigate(action)
-            }
-            R.id.load_state_viewpager_timeout -> {
-                val action =
+                }
+                R.id.load_state_viewpager_timeout -> {
                     LoadStateViewHomeFragmentDirections.actionLoadStateViewHomeFragmentToLoadStateViewPagerFragment()
-                view.findNavController().navigate(action)
+                }
+                R.id.load_state_recyclerview_loading -> {
+                    LoadStateViewHomeFragmentDirections.actionLoadStateViewHomeFragmentToLoadStateRecyclerViewFragment()
+                }
+                R.id.load_state_custom_header -> {
+                    LoadStateViewHomeFragmentDirections.actionLoadStateViewHomeFragmentToLoadStateCustomHeaderFragment()
+                }
+                R.id.load_state_search_header -> {
+                    LoadStateViewHomeFragmentDirections.actionLoadStateViewHomeFragmentToLoadStateMultipleHeaderFragment()
+                }
+                R.id.load_state_scrolling -> {
+                    LoadStateViewHomeFragmentDirections.actionLoadStateViewHomeFragmentToLoadStateScrollingToolbarFragment()
+                }
+                R.id.load_state_bottom_editor -> {
+                    LoadStateViewHomeFragmentDirections.actionLoadStateViewHomeFragmentToLoadStateBottomEditorFragment()
+                }
+                else -> null
             }
-        }
+        action?.let { view.findNavController().navigate(it) }
     }
 
     override fun onBackPressed() {

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="heven.holt.kcomponent.user">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application>
         <activity android:name=".ui.loadstate.LoadStateViewActivity" />
         <activity android:name=".ui.loadstate.LoadStateErrorActActivity" />
+        <activity android:name=".ui.coil.CoilActivity" />
     </application>
 </manifest>

@@ -3,6 +3,7 @@ package heven.holt.kcomponent.lib.view.loading.state.ktx
 import android.app.Activity
 import android.view.View
 import androidx.annotation.StringRes
+import androidx.fragment.app.Fragment
 import heven.holt.kcomponent.lib.view.loading.state.LoadingStateView
 import heven.holt.kcomponent.lib.view.loading.state.OnReloadListener
 
@@ -29,7 +30,25 @@ interface LoadingState {
         block: (ToolbarConfig.() -> Unit)? = null
     )
 
+    fun Fragment.setToolbar(
+        @StringRes titleId: Int,
+        navBtnType: NavBtnType = NavBtnType.ICON,
+        block: (ToolbarConfig.() -> Unit)? = null
+    )
+
+    fun Fragment.setToolbar(
+        title: String? = null,
+        navBtnType: NavBtnType = NavBtnType.ICON,
+        block: (ToolbarConfig.() -> Unit)? = null
+    )
+
     fun Activity.setHeaders(vararg delegates: LoadingStateView.ViewDelegate)
+
+    fun Fragment.setHeaders(vararg delegates: LoadingStateView.ViewDelegate)
+
+    fun Activity.setDecorView(delegate: LoadingStateView.DecorViewDelegate)
+
+    fun Fragment.setDecorView(delegate: LoadingStateView.DecorViewDelegate)
 
     fun showLoadingView(animation: LoadingStateView.Animation? = null)
 
@@ -48,6 +67,6 @@ interface LoadingState {
     fun ToolbarViewDelegate(
         title: String? = null,
         navBtnType: NavBtnType = NavBtnType.ICON,
-        block: (ToolbarConfig.() -> Unit)?
+        block: (ToolbarConfig.() -> Unit)? = null
     ): BaseToolbarViewDelegate
 }

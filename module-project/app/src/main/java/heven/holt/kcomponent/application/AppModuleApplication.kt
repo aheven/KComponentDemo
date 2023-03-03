@@ -4,10 +4,9 @@ import android.app.Application
 import android.util.Log
 import com.xiaojinzi.component.anno.ModuleAppAnno
 import com.xiaojinzi.component.application.IComponentApplication
-import heven.holt.kcomponent.base.application.BaseApplication
 
 @ModuleAppAnno
-class AppModuleApplication : BaseApplication(), IComponentApplication {
+class AppModuleApplication : IComponentApplication {
     override fun onCreate(app: Application) {
         Log.e("TAG", "onCreate: AppModuleApplication")
     }

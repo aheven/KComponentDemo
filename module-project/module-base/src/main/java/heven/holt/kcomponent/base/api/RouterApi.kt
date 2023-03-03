@@ -10,4 +10,7 @@ import heven.holt.kcomponent.base.RouterConfig
 interface RouterApi {
     @HostAndPathAnno(RouterConfig.USER_LOAD_STATE_VIEW)
     fun pageToLoadStateView(@UiContext context: Context)
+
+    @HostAndPathAnno(RouterConfig.USER_COIL)
+    fun pageToCoil(@UiContext context: Context)
 }

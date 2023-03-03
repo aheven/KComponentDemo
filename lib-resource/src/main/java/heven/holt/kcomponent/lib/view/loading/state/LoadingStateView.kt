@@ -55,6 +55,17 @@ class LoadingStateView @JvmOverloads constructor(
         showView(ViewType.CONTENT)
     }
 
+    fun addChildHeaders(vararg delegates: ViewDelegate) = addChildDecorView(LinearDecorViewDelegate(delegates))
+
+    fun addChildDecorView(decorViewDelegate: DecorViewDelegate) {
+        contentParent.removeView(currentView)
+        currentView = null
+        val childDecorView = decorViewDelegate.createDecorView()
+        contentParent.addView(childDecorView)
+        contentParent = decorViewDelegate.getContentParent(childDecorView)
+        showView(ViewType.CONTENT)
+    }
+
     private fun DecorViewDelegate.createDecorView() = onCreateDecorView(
         contentView.context,
         LayoutInflater.from(contentView.context)

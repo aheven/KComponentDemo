@@ -7,8 +7,16 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="clickButton"
-        android:text="LoadStateView" />
+        android:onClick="pageToLoadStateView"
+        android:text="LoadStateView"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pageToCoil"
+        android:text="Coil"
+        android:textAllCaps="false" />
 
     <TextView
         style="@style/TextView.Regular"
@@ -45,7 +53,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="文字测试(Condensed)" />
-
 
 
     <TextView
