@@ -11,6 +11,9 @@ interface RouterApi {
     @HostAndPathAnno(RouterConfig.USER_LOAD_STATE_VIEW)
     fun pageToLoadStateView(@UiContext context: Context)
 
-    @HostAndPathAnno(RouterConfig.USER_COIL)
-    fun pageToCoil(@UiContext context: Context)
+    @HostAndPathAnno(RouterConfig.USER_BRV_ADAPTER)
+    fun pageToBrv(@UiContext context: Context)
+
+    @HostAndPathAnno(RouterConfig.USER_NET)
+    fun pageToNet(@UiContext context: Context)
 }

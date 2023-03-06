@@ -23,7 +23,11 @@ class MainActivity : BaseActivity(R.layout.activity_main) {
         RouterApi::class.routeApi().pageToLoadStateView(view.context)
     }
 
-    fun pageToCoil(view: View) {
-        RouterApi::class.routeApi().pageToCoil(view.context)
+    fun pageToBrv(view: View) {
+        RouterApi::class.routeApi().pageToBrv(view.context)
+    }
+
+    fun pageToNet(view: View) {
+        RouterApi::class.routeApi().pageToNet(view.context)
     }
 }

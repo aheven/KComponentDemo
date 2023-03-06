@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'com.google.devtools.ksp'
     id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -18,4 +19,5 @@ ksp {
 dependencies {
     implementation(libs.navigation_fragment)
     implementation(libs.navigation_ui)
+    implementation(libs.okhttp_mock)
 }

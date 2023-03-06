@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_net.xml"
+    app:startDestination="@id/netRequestMethodFragment">
+
+    <fragment
+        android:id="@+id/netRequestMethodFragment"
+        android:name="heven.holt.kcomponent.user.ui.net.NetRequestMethodFragment"
+        android:label="请求方式"
+        tools:layout="@layout/fragment_net_request_method" />
+    <fragment
+        android:id="@+id/netSyncRequestFragment"
+        android:name="heven.holt.kcomponent.user.ui.net.NetSyncRequestFragment"
+        android:label="同步请求"
+        tools:layout="@layout/fragment_net_sync_request" />
+    <fragment
+        android:id="@+id/netViewModelRequestFragment"
+        android:name="heven.holt.kcomponent.user.ui.net.NetViewModelRequestFragment"
+        android:label="ViewModel"
+        tools:layout="@layout/fragment_net_view_model_request" />
+</navigation>
