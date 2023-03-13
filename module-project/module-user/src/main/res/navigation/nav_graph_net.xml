@@ -20,4 +20,38 @@
         android:name="heven.holt.kcomponent.user.ui.net.NetViewModelRequestFragment"
         android:label="ViewModel"
         tools:layout="@layout/fragment_net_view_model_request" />
+    <fragment
+        android:id="@+id/netAsyncTaskFragment"
+        android:name="heven.holt.kcomponent.user.ui.net.NetAsyncTaskFragment"
+        android:label="异步任务"
+        tools:layout="@layout/fragment_net_async_task" />
+    <fragment
+        android:id="@+id/netAutoDialogFragment"
+        android:name="heven.holt.kcomponent.user.ui.net.NetAutoDialogFragment"
+        android:label="自动加载框"
+        tools:layout="@layout/fragment_net_auto_dialog" />
+    <fragment
+        android:id="@+id/netCoroutineScopeFragment"
+        android:name="heven.holt.kcomponent.user.ui.net.NetCoroutineScopeFragment"
+        android:label="协程作用域"
+        tools:layout="@layout/fragment_net_coroutine_scope" />
+
+    <include app:graph="@navigation/nav_graph_net_converter" />
+
+    <fragment
+        android:id="@+id/netErrorHandlerFragment"
+        android:name="heven.holt.kcomponent.user.ui.net.NetErrorHandlerFragment"
+        android:label="错误处理"
+        tools:layout="@layout/fragment_net_error_handler" />
+    <fragment
+        android:id="@+id/netExceptionTraceFragment"
+        android:name="heven.holt.kcomponent.user.ui.net.NetExceptionTraceFragment"
+        android:label="异常追踪"
+        tools:layout="@layout/fragment_net_exception_trace" />
+    <fragment
+        android:id="@+id/netInterceptorFragment"
+        android:name="heven.holt.kcomponent.user.ui.net.NetInterceptorFragment"
+        android:label="拦截器"
+        tools:layout="@layout/fragment_net_interceptor" />
+
 </navigation>

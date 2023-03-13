@@ -12,34 +12,34 @@
         android:id="@+id/netViewModelRequestFragment"
         android:icon="@drawable/icon_net_view_model"
         android:title="ViewModel" />
-    <!--    <item-->
-    <!--        android:id="@+id/async_task"-->
-    <!--        android:icon="@drawable/ic_async_task"-->
-    <!--        android:title="异步任务" />-->
-    <!--    <item-->
-    <!--        android:id="@+id/auto_dialog"-->
-    <!--        android:icon="@drawable/ic_config_dialog"-->
-    <!--        android:title="自动加载框" />-->
-    <!--    <item-->
-    <!--        android:id="@+id/coroutine_scope"-->
-    <!--        android:icon="@drawable/ic_scope"-->
-    <!--        android:title="协程作用域" />-->
-    <!--    <item-->
-    <!--        android:id="@+id/nav_converter"-->
-    <!--        android:icon="@drawable/ic_convert"-->
-    <!--        android:title="自定义转换器" />-->
-    <!--    <item-->
-    <!--        android:id="@+id/error_handler"-->
-    <!--        android:icon="@drawable/ic_error_handler"-->
-    <!--        android:title="错误处理" />-->
-    <!--    <item-->
-    <!--        android:id="@+id/exception_trace"-->
-    <!--        android:icon="@drawable/ic_exception_trace"-->
-    <!--        android:title="异常追踪" />-->
-    <!--    <item-->
-    <!--        android:id="@+id/interceptor"-->
-    <!--        android:icon="@drawable/ic_interceptor"-->
-    <!--        android:title="拦截器" />-->
+    <item
+        android:id="@+id/netAsyncTaskFragment"
+        android:icon="@drawable/icon_net_async_task"
+        android:title="异步任务" />
+    <item
+        android:id="@+id/netAutoDialogFragment"
+        android:icon="@drawable/icon_net_config_dialog"
+        android:title="自动加载框" />
+    <item
+        android:id="@+id/netCoroutineScopeFragment"
+        android:icon="@drawable/icon_net_scope"
+        android:title="协程作用域" />
+    <item
+        android:id="@+id/nav_converter"
+        android:icon="@drawable/icon_net_convert"
+        android:title="自定义转换器" />
+    <item
+        android:id="@+id/netErrorHandlerFragment"
+        android:icon="@drawable/icon_net_error_handler"
+        android:title="错误处理" />
+    <item
+        android:id="@+id/netExceptionTraceFragment"
+        android:icon="@drawable/icon_net_exception_trace"
+        android:title="异常追踪" />
+    <item
+        android:id="@+id/netInterceptorFragment"
+        android:icon="@drawable/icon_net_interceptor"
+        android:title="拦截器" />
     <!--    <item-->
     <!--        android:id="@+id/https"-->
     <!--        android:icon="@drawable/ic_https"-->

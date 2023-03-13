@@ -5,7 +5,7 @@ import androidx.databinding.BindingAdapter
 import coil.load
 import coil.transform.CircleCropTransformation
 
-@BindingAdapter("app:avatar")
+@BindingAdapter("avatar")
 fun setAvatar(imageView: ImageView, any: Any?) {
     imageView.load(any) {
         crossfade(true)

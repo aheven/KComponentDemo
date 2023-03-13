@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">module-base</string>
+
+    <string name="bubble_loading_title">加载中</string>
 </resources>

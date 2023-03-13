@@ -1,10 +1,11 @@
 package heven.holt.kcomponent.demo
 
 import android.util.Log
-import com.xiaojinzi.component.Component
-import com.xiaojinzi.component.Config
+import com.drake.net.okhttp.setRequestInterceptor
 import com.xiaojinzi.component.support.ASMUtil
 import heven.holt.kcomponent.base.application.BaseApplication
+import heven.holt.kcomponent.user.ui.net.interceptor.GlobalHeaderInterceptor
+import okhttp3.OkHttpClient
 
 class App : BaseApplication() {
     override fun onCreate() {
@@ -14,14 +15,10 @@ class App : BaseApplication() {
             "demoApp",
             "moduleNames = ${ASMUtil.getModuleNames()}"
         )
+    }
 
-        Component.init(
-            application = this,
-            isDebug = BuildConfig.DEBUG,
-            config = Config.Builder()
-                .optimizeInit(true)
-                .autoRegisterModule(true)
-                .build()
-        )
+
+    override fun OkHttpClient.Builder.appendInterceptors() {
+        setRequestInterceptor(GlobalHeaderInterceptor())
     }
 }

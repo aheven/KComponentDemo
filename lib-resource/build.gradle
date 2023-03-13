@@ -22,4 +22,6 @@ dependencies {
     api libs.title_bar
     api libs.net
     api libs.brv
+    api libs.serialization
+    api libs.gson
 }

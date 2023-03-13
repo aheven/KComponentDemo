@@ -5,10 +5,11 @@ import android.util.Log
 import com.xiaojinzi.component.anno.ModuleAppAnno
 import com.xiaojinzi.component.application.IComponentApplication
 import com.xiaojinzi.component.application.IModuleNotifyChanged
+import heven.holt.kcomponent.base.application.BaseApplication
 import heven.holt.kcomponent.user.mock.MockDispatcher
 
 @ModuleAppAnno
-class UserModuleApplication : IComponentApplication, IModuleNotifyChanged {
+class UserModuleApplication : BaseApplication(), IComponentApplication, IModuleNotifyChanged {
     override fun onCreate(app: Application) {
         MockDispatcher.initialize()
         Log.d("TAG", "onCreate: UserModuleApplication")
